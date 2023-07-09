@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Products from './Components/Products';
+import NewProduct from './Components/NewProduct';
 
 const App = () => {
   const products = [
@@ -31,6 +32,7 @@ const App = () => {
   ];
   return (
     <div>
+      <NewProduct/>
       <Products items={products}/>
     </div>
   );
