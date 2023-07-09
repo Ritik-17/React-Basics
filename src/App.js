@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Products from './Components/Products';
 
-function App() {
+const App = () => {
+  const products = [
+    {
+      id: 'p1',
+      title: 'Nirma',
+      amount: 100,
+      Date : new Date(2021, 8, 10),
+    },
+    {
+      id: 'p2',
+      title: 'Surf Excel',
+      amount: 100,
+      Date : new Date(2021, 8, 10),
+    },
+    {
+      id: 'p3',
+      title: 'Tide',
+      amount: 100,
+      Date : new Date(2021, 8, 10),
+    },
+    {
+      id: 'p4',
+      title: 'Gadhi',
+      amount: 100,
+      Date : new Date(2025, 8, 10),
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Products items={products}/>
     </div>
   );
 }
